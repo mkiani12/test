@@ -1,0 +1,18 @@
+TAP version 14
+# Subtest: User routes CRUD operations
+    ok 1 - Create user status code is 201
+    ok 2 - User is created with an ID
+    ok 3 - Get all users status code is 200
+    ok 4 - Users are fetched successfully
+    ok 5 - Get user by ID status code is 200
+    ok 6 - Fetched user has correct name
+    ok 7 - Fetched user has correct email
+    ok 8 - Update user status code is 200
+    ok 9 - User is updated successfully
+    ok 10 - Delete user status code is 200
+    ok 11 - User is deleted successfully
+    ok 12 - Deleted user is not found
+    1..12
+ok 1 - User routes CRUD operations # time=292.213ms
+
+1..1

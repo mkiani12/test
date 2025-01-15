@@ -1,0 +1,39 @@
+TAP version 13
+# Subtest: example is loaded
+not ok 1 - example is loaded
+  ---
+  duration_ms: 1104.9186
+  location: 'C:\\Users\\mhkia\\Projects\\fastify\\test\\test\\routes\\example.test.js:7:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Cannot find module '@fastify/mongodb'
+    Require stack:
+    - C:\Users\mhkia\Projects\fastify\test\plugins\mongodb.js
+    - C:\Users\mhkia\Projects\fastify\test\node_modules\@fastify\autoload\index.js
+    - C:\Users\mhkia\Projects\fastify\test\app.js
+    - C:\Users\mhkia\Projects\fastify\test\node_modules\fastify-cli\util.js
+    - C:\Users\mhkia\Projects\fastify\test\node_modules\fastify-cli\args.js
+    - C:\Users\mhkia\Projects\fastify\test\node_modules\fastify-cli\start.js
+    - C:\Users\mhkia\Projects\fastify\test\node_modules\fastify-cli\helper.js
+    - C:\Users\mhkia\Projects\fastify\test\test\helper.js
+    - C:\Users\mhkia\Projects\fastify\test\test\routes\example.test.js
+  code: 'MODULE_NOT_FOUND'
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    Module._load (node:internal/modules/cjs/loader:985:27)
+    Module.require (node:internal/modules/cjs/loader:1235:19)
+    require (node:internal/modules/helpers:176:18)
+    mongodbConnector (C:\Users\mhkia\Projects\fastify\test\plugins\mongodb.js:6:20)
+    Plugin.exec (C:\Users\mhkia\Projects\fastify\test\node_modules\avvio\lib\plugin.js:125:28)
+    Boot._loadPlugin (C:\Users\mhkia\Projects\fastify\test\node_modules\avvio\boot.js:432:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1152.9342

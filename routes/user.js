@@ -1,52 +1,65 @@
 "use strict";
 
+const UserService = require("../services/user");
+const { ObjectId } = require("mongodb");
+
 module.exports = async function (fastify, opts) {
-  const collection = fastify.mongo.db.collection("users");
+  const userService = new UserService(fastify.mongo.db);
 
   // Create User
   fastify.post("/users", async (request, reply) => {
-    const { name, email } = request.body;
-    const result = await collection.insertOne({ name, email });
-    reply.code(201).send(result.ops[0]);
+    try {
+      const user = await userService.createUser(request.body);
+      reply.code(201).send(user);
+    } catch (err) {
+      console.error("Error creating user:", err); // Log the error
+      reply.code(400).send({ message: "Server error", error: err.message });
+    }
   });
 
-  // Read All Users
+  // Get All Users
   fastify.get("/users", async (request, reply) => {
-    const users = await collection.find().toArray();
+    const users = await userService.getAllUsers();
     reply.send(users);
   });
 
-  // Read User by ID
+  // Get User by ID
   fastify.get("/users/:id", async (request, reply) => {
     const { id } = request.params;
-    const user = await collection.findOne({
-      _id: new fastify.mongo.ObjectId(id),
-    });
-    if (!user) return reply.code(404).send({ message: "User not found" });
+    if (!ObjectId.isValid(id)) {
+      return reply.code(400).send({ message: "Invalid user ID" });
+    }
+    const user = await userService.getUserById(id);
+    if (!user) {
+      return reply.code(404).send({ message: "User not found" });
+    }
     reply.send(user);
   });
 
   // Update User
   fastify.put("/users/:id", async (request, reply) => {
     const { id } = request.params;
+    if (!ObjectId.isValid(id)) {
+      return reply.code(400).send({ message: "Invalid user ID" });
+    }
     const { name, email } = request.body;
-    const result = await collection.updateOne(
-      { _id: new fastify.mongo.ObjectId(id) },
-      { $set: { name, email } }
-    );
-    if (result.matchedCount === 0)
+    const updated = await userService.updateUser(id, { name, email });
+    if (!updated) {
       return reply.code(404).send({ message: "User not found" });
+    }
     reply.send({ message: "User updated" });
   });
 
   // Delete User
   fastify.delete("/users/:id", async (request, reply) => {
     const { id } = request.params;
-    const result = await collection.deleteOne({
-      _id: new fastify.mongo.ObjectId(id),
-    });
-    if (result.deletedCount === 0)
+    if (!ObjectId.isValid(id)) {
+      return reply.code(400).send({ message: "Invalid user ID" });
+    }
+    const deleted = await userService.deleteUser(id);
+    if (!deleted) {
       return reply.code(404).send({ message: "User not found" });
+    }
     reply.send({ message: "User deleted" });
   });
 };

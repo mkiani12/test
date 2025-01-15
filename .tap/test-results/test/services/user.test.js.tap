@@ -1,0 +1,16 @@
+TAP version 14
+# Subtest: UserService CRUD operations
+    ok 1 - User is created with an ID
+    ok 2 - User name is correct
+    ok 3 - User email is correct
+    ok 4 - One user exists in the database
+    ok 5 - User is fetched by ID
+    ok 6 - Fetched user name is correct
+    ok 7 - User is updated successfully
+    ok 8 - Updated user name is correct
+    ok 9 - User is deleted successfully
+    ok 10 - Deleted user no longer exists
+    1..10
+ok 1 - UserService CRUD operations # time=236.01ms
+
+1..1
