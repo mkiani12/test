@@ -42,6 +42,8 @@ profile-*
 # mac files
 .DS_Store
 
+.tap/
+
 # vim swap files
 *.swp
 
