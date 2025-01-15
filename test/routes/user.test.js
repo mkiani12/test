@@ -35,6 +35,7 @@ test("User routes CRUD operations", async (t) => {
     payload: {
       name: "Mohammad Kiani",
       email: "test@example.com",
+      age: 22,
     },
   });
 
@@ -63,6 +64,7 @@ test("User routes CRUD operations", async (t) => {
   const userById = JSON.parse(getByIdResponse.body);
   t.equal(userById.name, "Mohammad Kiani", "Fetched user has correct name");
   t.equal(userById.email, "test@example.com", "Fetched user has correct email");
+  t.equal(userById.age, 22, "Fetched user has correct age");
 
   // Update User
   const updateResponse = await fastify.inject({
@@ -71,6 +73,7 @@ test("User routes CRUD operations", async (t) => {
     payload: {
       name: "Mahmood Kiani",
       email: "test2@example.com",
+      age: 23,
     },
   });
 

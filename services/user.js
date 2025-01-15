@@ -8,7 +8,7 @@ class UserService {
   }
 
   async createUser(data) {
-    if (!data || !data.name || !data.email) {
+    if (!data || !data.name || !data.email || !data.age) {
       throw new Error("Invalid user data");
     }
     try {

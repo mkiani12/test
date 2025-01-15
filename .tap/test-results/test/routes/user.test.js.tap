@@ -7,12 +7,13 @@ TAP version 14
     ok 5 - Get user by ID status code is 200
     ok 6 - Fetched user has correct name
     ok 7 - Fetched user has correct email
-    ok 8 - Update user status code is 200
-    ok 9 - User is updated successfully
-    ok 10 - Delete user status code is 200
-    ok 11 - User is deleted successfully
-    ok 12 - Deleted user is not found
-    1..12
-ok 1 - User routes CRUD operations # time=292.213ms
+    ok 8 - Fetched user has correct age
+    ok 9 - Update user status code is 200
+    ok 10 - User is updated successfully
+    ok 11 - Delete user status code is 200
+    ok 12 - User is deleted successfully
+    ok 13 - Deleted user is not found
+    1..13
+ok 1 - User routes CRUD operations # time=364.633ms
 
 1..1

@@ -20,13 +20,18 @@ test("UserService CRUD operations", async (t) => {
   });
 
   // Test Data
-  const userData = { name: "Mohammad Kiani", email: "test@example.com" };
+  const userData = {
+    name: "Mohammad Kiani",
+    email: "test@example.com",
+    age: 22,
+  };
 
   // Create User
   const newUser = await userService.createUser(userData);
   t.ok(newUser._id, "User is created with an ID");
   t.equal(newUser.name, userData.name, "User name is correct");
   t.equal(newUser.email, userData.email, "User email is correct");
+  t.equal(newUser.age, userData.age, "User age is correct");
 
   // Get All Users
   const users = await userService.getAllUsers();
@@ -41,6 +46,7 @@ test("UserService CRUD operations", async (t) => {
   const updated = await userService.updateUser(newUser._id, {
     name: "Mahmood Kiani",
     email: "test2@example.com",
+    age: 23,
   });
   t.ok(updated, "User is updated successfully");
 

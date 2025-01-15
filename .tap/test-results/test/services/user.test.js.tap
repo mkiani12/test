@@ -3,14 +3,15 @@ TAP version 14
     ok 1 - User is created with an ID
     ok 2 - User name is correct
     ok 3 - User email is correct
-    ok 4 - One user exists in the database
-    ok 5 - User is fetched by ID
-    ok 6 - Fetched user name is correct
-    ok 7 - User is updated successfully
-    ok 8 - Updated user name is correct
-    ok 9 - User is deleted successfully
-    ok 10 - Deleted user no longer exists
-    1..10
-ok 1 - UserService CRUD operations # time=236.01ms
+    ok 4 - User age is correct
+    ok 5 - One user exists in the database
+    ok 6 - User is fetched by ID
+    ok 7 - Fetched user name is correct
+    ok 8 - User is updated successfully
+    ok 9 - Updated user name is correct
+    ok 10 - User is deleted successfully
+    ok 11 - Deleted user no longer exists
+    1..11
+ok 1 - UserService CRUD operations # time=227.232ms
 
 1..1

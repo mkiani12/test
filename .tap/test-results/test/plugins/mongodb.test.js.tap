@@ -5,6 +5,6 @@ TAP version 14
     ok 3 - MongoDB database is accessible
     ok 4 - Document is inserted successfully
     1..4
-ok 1 - MongoDB plugin should connect to the database # time=928.752ms
+ok 1 - MongoDB plugin should connect to the database # time=933.256ms
 
 1..1
