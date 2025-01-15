@@ -1,7 +1,0 @@
-TAP version 14
-# Subtest: default root route
-    ok 1 - should be equivalent
-    1..1
-ok 1 - default root route # time=1594.5ms
-
-1..1

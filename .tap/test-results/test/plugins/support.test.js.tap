@@ -1,7 +1,0 @@
-TAP version 14
-# Subtest: support works standalone
-    ok 1 - should be equal
-    1..1
-ok 1 - support works standalone # time=48.177ms
-
-1..1
