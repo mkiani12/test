@@ -14,6 +14,6 @@ TAP version 14
     ok 12 - User is deleted successfully
     ok 13 - Deleted user is not found
     1..13
-ok 1 - User routes CRUD operations # time=364.633ms
+ok 1 - User routes CRUD operations # time=371.536ms
 
 1..1

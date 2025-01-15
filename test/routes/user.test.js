@@ -10,7 +10,7 @@ test("User routes CRUD operations", async (t) => {
   const fastify = Fastify();
 
   // Connect to MongoDB running in Docker container
-  const uri = "mongodb://mongo:27017/test-db";
+  const uri = "mongodb://localhost:27017/test-db";
 
   // Register MongoDB plugin with the URI
   await fastify.register(mongodbPlugin, { url: uri });

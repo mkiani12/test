@@ -6,12 +6,12 @@ const UserService = require("../../services/user");
 
 test("UserService CRUD operations", async (t) => {
   // MongoDB Docker container URI
-  const uri = "mongodb://mongo:27017/test-db";
+  const uri = "mongodb://localhost:27017/test-db";
 
   // Connect to MongoDB
   const client = new MongoClient(uri);
   await client.connect();
-  const db = client.db("test");
+  const db = client.db("test-db");
   const userService = new UserService(db);
 
   t.teardown(async () => {

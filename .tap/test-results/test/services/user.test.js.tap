@@ -12,6 +12,6 @@ TAP version 14
     ok 10 - User is deleted successfully
     ok 11 - Deleted user no longer exists
     1..11
-ok 1 - UserService CRUD operations # time=227.232ms
+ok 1 - UserService CRUD operations # time=171.304ms
 
 1..1

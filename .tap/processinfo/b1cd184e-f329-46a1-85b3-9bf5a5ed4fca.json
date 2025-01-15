@@ -1,8 +1,8 @@
 {
-  "date": "2025-01-15T17:18:45.811Z",
+  "date": "2025-01-15T19:53:57.173Z",
   "argv": [
     "C:\\Program Files\\nodejs\\node.exe",
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\test\\routes\\user.test.js"
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\test\\plugins\\support.test.js"
   ],
   "execArgv": [
     "--import=file:///C:/Users/mhkia/Projects/fastify/test/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
@@ -12,12 +12,12 @@
   ],
   "NODE_OPTIONS": "\"--import=file:///C:/Users/mhkia/Projects/fastify/test/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
   "cwd": "C:\\Users\\mhkia\\Projects\\fastify\\test",
-  "pid": 5040,
-  "ppid": 23736,
+  "pid": 20956,
+  "ppid": 2452,
   "parent": null,
-  "uuid": "b144bb09-5e9f-4529-91cc-3f83467fb923",
+  "uuid": "b1cd184e-f329-46a1-85b3-9bf5a5ed4fca",
   "files": [
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\test\\routes\\user.test.js",
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\test\\plugins\\support.test.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@isaacs\\ts-node-temp-fork-for-pr-2009\\import.mjs",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@isaacs\\ts-node-temp-fork-for-pr-2009\\import-loader.mjs",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@tapjs\\mock\\dist\\esm\\import.mjs",
@@ -34,8 +34,8 @@
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\get-all-conditional-values.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\get-all-conditions.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\get-unique-condition-sets.js",
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-all-local-imports.js",
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-conditional-value.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-import.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\is-windows.js",
@@ -52,9 +52,9 @@
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\to-file-url.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-dependency-export.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-package-import.js",
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\walk-up-path\\dist\\esm\\index.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\read-json.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\find-star-match.js",
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\walk-up-path\\dist\\esm\\index.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\glob\\dist\\esm\\index.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\glob\\node_modules\\minimatch\\dist\\esm\\index.js",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\glob\\dist\\esm\\glob.js",
@@ -74,9 +74,7 @@
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@tapjs\\mock\\dist\\esm\\loader.mjs",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@tapjs\\mock\\dist\\esm\\hooks.mjs",
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service-client.js",
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\services\\user.js",
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\routes\\user.js",
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\plugins\\mongodb.js"
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\plugins\\support.js"
   ],
   "sources": {
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\@tapjs\\mock\\dist\\esm\\import.mjs": [
@@ -121,11 +119,11 @@
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\get-unique-condition-sets.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\get-unique-condition-sets.ts"
     ],
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js": [
-      "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\resolve-all-exports.ts"
-    ],
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-all-local-imports.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\resolve-all-local-imports.ts"
+    ],
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js": [
+      "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\resolve-all-exports.ts"
     ],
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-conditional-value.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\resolve-conditional-value.ts"
@@ -175,14 +173,14 @@
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\resolve-package-import.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\resolve-package-import.ts"
     ],
+    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\walk-up-path\\dist\\esm\\index.js": [
+      "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\walk-up-path\\src\\index.ts"
+    ],
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\read-json.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\read-json.ts"
     ],
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\dist\\esm\\find-star-match.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\resolve-import\\src\\find-star-match.ts"
-    ],
-    "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\walk-up-path\\dist\\esm\\index.js": [
-      "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\walk-up-path\\src\\index.ts"
     ],
     "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\glob\\dist\\esm\\index.js": [
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\glob\\src\\index.ts"
@@ -233,9 +231,9 @@
       "C:\\Users\\mhkia\\Projects\\fastify\\test\\node_modules\\glob\\src\\processor.ts"
     ]
   },
-  "root": "b144bb09-5e9f-4529-91cc-3f83467fb923",
-  "externalID": "test/routes/user.test.js",
+  "root": "b1cd184e-f329-46a1-85b3-9bf5a5ed4fca",
+  "externalID": "test/plugins/support.test.js",
   "code": 0,
   "signal": null,
-  "runtime": 6717.8579
+  "runtime": 3987.9015
 }

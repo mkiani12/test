@@ -24,6 +24,7 @@ module.exports = async function (fastify, opts) {
         201: {
           type: "object",
           properties: {
+            _id: { type: "string" },
             name: { type: "string" },
             email: { type: "string" },
             age: { type: "integer" },
@@ -68,6 +69,7 @@ module.exports = async function (fastify, opts) {
           items: {
             type: "object",
             properties: {
+              _id: { type: "string" },
               name: { type: "string" },
               email: { type: "string" },
               age: { type: "integer" },
@@ -104,6 +106,7 @@ module.exports = async function (fastify, opts) {
         200: {
           type: "object",
           properties: {
+            _id: { type: "string" },
             name: { type: "string" },
             email: { type: "string" },
             age: { type: "integer" },
