@@ -6,6 +6,10 @@ This project was bootstrapped with Fastify-CLI.
 
 In the project directory, you can run:
 
+### `yarn install`
+
+To install the packages that need to be installed
+
 ### `yarn dev`
 
 To start the app in dev mode.\
