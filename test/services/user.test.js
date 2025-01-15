@@ -6,7 +6,7 @@ const UserService = require("../../services/user");
 
 test("UserService CRUD operations", async (t) => {
   // MongoDB Docker container URI
-  const uri = "mongodb://localhost:27017/test-db"; // MongoDB URI (make sure Docker container is running)
+  const uri = "mongodb://mongo:27017/test-db";
 
   // Connect to MongoDB
   const client = new MongoClient(uri);
@@ -16,7 +16,6 @@ test("UserService CRUD operations", async (t) => {
 
   t.teardown(async () => {
     await client.close();
-    // Docker container will continue running, no need for additional stop operations
   });
 
   // Test Data

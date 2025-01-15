@@ -10,19 +10,17 @@ test("User routes CRUD operations", async (t) => {
   const fastify = Fastify();
 
   // Connect to MongoDB running in Docker container
-  const uri = "mongodb://localhost:27017/test-db"; // MongoDB URI (make sure to start MongoDB in Docker first)
+  const uri = "mongodb://mongo:27017/test-db";
 
   // Register MongoDB plugin with the URI
   await fastify.register(mongodbPlugin, { url: uri });
   const userService = new UserService(fastify.mongo.db);
 
-  // Register user routes with dependency injection for the UserService
   fastify.decorate("userService", userService);
   await fastify.register(userRoutes);
 
   t.teardown(async () => {
     await fastify.close();
-    // You don't need to stop MongoDB container manually, Docker will handle it.
   });
 
   // Test Data
