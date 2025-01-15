@@ -21,8 +21,8 @@ class UserService {
     }
   }
 
-  async getAllUsers() {
-    return this.collection.find().toArray();
+  async getAllUsers(filter = {}) {
+    return this.collection.find(filter).toArray();
   }
 
   async getUserById(id) {

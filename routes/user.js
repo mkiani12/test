@@ -17,9 +17,17 @@ module.exports = async function (fastify, opts) {
     }
   });
 
-  // Get All Users
+  // Get All Users with Filters
   fastify.get("/users", async (request, reply) => {
-    const users = await userService.getAllUsers();
+    const { name, email, age } = request.query;
+
+    // Construct query based on available filters
+    const filter = {};
+    if (name) filter.name = { $regex: name, $options: "i" }; // Case-insensitive search for name
+    if (email) filter.email = { $regex: email, $options: "i" }; // Case-insensitive search for email
+    if (age) filter.age = parseInt(age);
+
+    const users = await userService.getAllUsers(filter);
     reply.send(users);
   });
 
